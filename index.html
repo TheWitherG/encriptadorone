@@ -9,25 +9,33 @@
     <link rel="stylesheet" href="style.css">    
 </head>
 <body>
-    <main>
+    <header>
         <div class="logo">
-             <img src="imgs/Logo.png">           
+             <img src="imgs/Logo.png" alt="Logo Alura"><!--<h1>Encriptador de Texto</h1>-->       
         </div>
-        <div class="entradaTexto">
-            <img src="imgs/Ingrese el texto aqui.png">            
-        </div>
-        <div class="botones">
-            <img src="imgs/Frame 1.png" >
-            <img src="imgs/botonEncript.png">
-            <img src="imgs/butonDesencript.png">
-        </div>
-        <div class="salidaTexto">
-            <div>
-                <img src="imgs/Muñeco.png">
-                <img src="imgs/Frame 5.png" >
-                <img src="imgs/Rectangle 1.png">
-            </div>            
-        </div>      
+    </header>
+    <main>        
+        <div class="contenedores">
+            <div class="entradaTexto">
+                <textarea name="" class="inputbox" placeholder="Ingrese el Texto"></textarea>    
+                <div class="parteBaja">
+                    <p>&#9888 Solo letras minúsculas y sin acentos</p>
+                    <div class="botones">
+                        <button type="button" class="botoni">Encriptar</button>
+                        <button type="button" class="botono">Desencriptar</button> 
+                    </div>            
+                </div>
+            </div>
+            
+            <div class="salidaTexto">
+                <div>                    
+                    <div>
+                        <textarea name="" class="outputbox"></textarea>                    
+                    </div>
+                </div>            
+            </div> 
+            
+        </div>         
     </main>
 </body>
 </html>
