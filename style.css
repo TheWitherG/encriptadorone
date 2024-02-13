@@ -1,5 +1,5 @@
 body{
-    background-color: #EFF1FA;
+    background: linear-gradient(#EFF1FA,#e9ecf8/*,#aab2d5*/) ;
 }
 
 .logo{
@@ -56,14 +56,15 @@ main{
 }
 
 .botones{   
-    margin: 1.1em 0 0 0;
+    margin: 1.5vh 0 0 0;
 }
 
 .botoni, .botono{
     width: 15vw;
     height: 6vh;    
-    border-radius: 1.4em;  
+    border-radius: 1.4vw;  
     font-size: 1.7em;
+    transition: 500ms;
 }
 
 .botoni{
@@ -75,8 +76,15 @@ main{
     border-color: #072B61;  
     background-color: #CED4DA;
     color:#072B61;
-    margin: 0 0 0 2em;
+    margin: 0 0 0 2.5vw;
 
+}
+
+.botoni:hover,.botono:hover{
+
+    width: 16.5vw;
+    height: 6.6vh;
+    font-size: 1.9em;
 }
 
 .salidaTexto{
@@ -90,6 +98,7 @@ main{
     height: 65em;
     margin: 0 0 0 8em;   
     pointer-events: none;
+    box-shadow: 1em 2em 3vh 0.5em #aab2d5;
 }
 .sinMensaje{
     position: absolute;
@@ -110,5 +119,13 @@ main{
     font-size: large;
 }
 
-
+footer{
+    margin: 5.2% 0 0 0 ;
+    text-align: center;
+    background: none;
+}
+.imagenesRedes img{
+    padding: 0 1vw 0 0vw;
+    width: 3%;
+}
 
