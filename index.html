@@ -15,30 +15,31 @@
     <header>
         <div class="logo">
             <div>
-                <img src="imgs/Logo.png" alt="Logo Alura">
+                <a href="https://www.aluracursos.com/"><img src="imgs/Logo.png" alt="Logo Alura"></a>
                 
-            </div><h1>Encriptador de texto by Gabriel Gonzalez</h1>  
+            </div><h1>Encriptador de texto</h1>  
               
         </div>
     </header>
     <main>        
         <div class="contenedores">
             <div class="entradaTexto">
-                <textarea name="" class="inputbox" placeholder="Ingrese el Texto"></textarea>    
+                <textarea name="" class="inputbox" placeholder="Ingrese el Texto"></textarea>
                 <div class="parteBaja">
                     <p>&#9888 Solo letras minúsculas y sin acentos</p>
                     <div class="botones">
-                        <button type="button" class="botoni">Encriptar</button>
-                        <button type="button" class="botono">Desencriptar</button> 
+                        <button onclick="encriptarTexto()" type="button" class="botoni">Encriptar</button>
+                        <button onclick="desencriptarTexto()" type="button" class="botono">Desencriptar</button>
                     </div>            
                 </div>
             </div>
             
             <div class="salidaTexto">
                 <div class="cajaSalida"> 
-                    <textarea name="" class="outputbox"></textarea> 
+                    <textarea name="" class="outputbox" readonly></textarea>
+                    <img src="imgs/copiar.png" class="botonCopiar">
                 </div>  
-                <div class="sinMensaje">
+                <div class="sinMensaje" >
                     <img src="imgs/Muñeco.png" alt="" class="muneco"> 
                     <div class="textoMuneco">
                        <h2>Ningún mensaje fue encontrado</h2>  
@@ -53,6 +54,7 @@
             <a href="https://github.com/TheWitherG"><img src="imgs/gitLogo.png" alt="Logo de GitHub" class="logoGithub"></a>
             <a href="https://www.linkedin.com/in/iq-gabriel-gonzalez"><img src="imgs/linkedLogo.png" alt="Logo de LinkedIN" class="logoLinked"></a>           
         </div>        
-    </footer>    
+    </footer>
+    <script src="app.js"></script>    
 </body>
 </html>
