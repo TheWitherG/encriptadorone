@@ -1,0 +1,16 @@
+/**/
+
+
+/**/
+
+
+/**/
+function encriptarTexto{
+    
+}
+
+function desencriptarTexto{
+
+}
+
+
