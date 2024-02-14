@@ -89,15 +89,19 @@ main{
     position: absolute;
     left: 14%;
     top: 25%;
-    pointer-events: none;
+    pointer-events:none;
     text-align: center;
 }
 .botonCopiar{
     position: absolute;
-    top: 104%;
-    left: 42%;
+    top: 90%;
+    left: -35%;
     width: 10%;
     visibility: hidden;
+    transition: 400ms;
+}
+.botonCopiar:hover{
+    width: 11.5%;
 }
 .textoMuneco{
     margin: 5px 0 0 0;
