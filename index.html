@@ -15,9 +15,9 @@
     <header>
         <div class="logo">
             <div>
-                <img src="imgs/Logo.png" alt="Logo Alura">
+                <a href="https://www.aluracursos.com/"><img src="imgs/Logo.png" alt="Logo Alura"></a>
                 
-            </div><h1>Encriptador de texto by Gabriel Gonzalez</h1>  
+            </div><h1>Encriptador de texto</h1>  
               
         </div>
     </header>
@@ -28,15 +28,16 @@
                 <div class="parteBaja">
                     <p>&#9888 Solo letras minúsculas y sin acentos</p>
                     <div class="botones">
-                        <button type="button" class="botoni">Encriptar</button>
-                        <button type="button" class="botono">Desencriptar</button> 
+                        <button onclick="encriptarTexto()" type="button" class="botoni">Encriptar</button>
+                        <button onclick="desencriptarTexto()" type="button" class="botono">Desencriptar</button> 
                     </div>            
                 </div>
             </div>
             
             <div class="salidaTexto">
                 <div class="cajaSalida"> 
-                    <textarea name="" class="outputbox"></textarea> 
+                    <textarea name="" class="outputbox"></textarea>
+                    <img src="imgs/copiar.png" class="botonCopiar">
                 </div>  
                 <div class="sinMensaje">
                     <img src="imgs/Muñeco.png" alt="" class="muneco"> 
