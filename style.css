@@ -18,7 +18,7 @@ main{
 }
 .contenedores{
     display: flex;
-    margin: 1.5vw 0 0 15vw;
+    margin: 1.5vw 0 0 11vw;
 }
 .inputbox, .outputbox{
     border: none;
@@ -120,8 +120,7 @@ main{
 }
 
 footer{
-
-    margin: 10vh 0 1vh 0 ;
+    margin: 4vw 0 1vh 0 ;
     text-align: center;
     background: none;
 }
