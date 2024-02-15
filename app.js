@@ -2,9 +2,9 @@
 let outputTexto = "";
 let inputTexto = "";
 let auxiliar = "";
-let botonCopia = document.querySelector('.botonCopiar');
-botonCopia.addEventListener('click', copiar())
+let cajaSalida = document.querySelector('.outputbox');
 let bloqueSalida = document.querySelector('.sinMensaje');
+let botonCopia = document.querySelector('.botonCopiar');
 
 /*Funciones*/
 function capturaTexto(){   
@@ -12,17 +12,21 @@ function capturaTexto(){
 }
 
 function mostrarTexto(){
-    let cajaSalida = document.querySelector('.outputbox');    
+    outputTexto=auxiliar;
+    auxiliar=''; 
     bloqueSalida.style.display = 'none';
-    cajaSalida.innerHTML = outputTexto;
+    cajaSalida.value = outputTexto;
     cajaSalida.style.pointerEvents = 'all';
     botonCopia.style.visibility = 'visible';
     document.querySelector('.inputbox').value='';
 }
-function copiar(){    
-    let cajaSalida = document.querySelector('.outputbox').value;
-    console.log(inputTexto);
-    navigator.clipboard.writeText(cajaSalida);
+function copiar(){ 
+    let aux=document.createElement('input');
+    aux.setAttribute("value",document.querySelector('.outputbox').value);
+    document.body.appendChild(aux);
+    aux.select();
+    document.execCommand('copy');
+    document.body.removeChild(aux);   
 }
 
 function encriptarTexto(){
@@ -54,8 +58,7 @@ function encriptarTexto(){
                 break;
         }        
     }
-    outputTexto=auxiliar;
-    auxiliar='';
+    
     mostrarTexto();
 }
 
@@ -93,9 +96,5 @@ function desencriptarTexto(){
                 break;
         }        
     }
-    outputTexto=auxiliar;
-    auxiliar=''; 
     mostrarTexto();    
 }
-
-
