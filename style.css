@@ -1,10 +1,10 @@
 body{
-    background: linear-gradient(#EFF1FA,#e9ecf8/*,#aab2d5*/) ;
+    background: linear-gradient(#EFF1FA,#e9ecf8) ;
     font-family: "Inter", sans-serif;
 }
 .logo{
     display: flex;
-    margin: 2em 0 1em 1.6em;
+    margin: 2vw 0 1vw 1.6vw;
     align-items: center;
 }
 .logo > h1{
@@ -14,11 +14,11 @@ body{
 }
 main{
     position:relative;
-    margin:0 3em;
+    margin:0 3vh;
 }
 .contenedores{
     display: flex;
-    margin: 4vh 0 0 18vh;
+    margin: 1.5vw 0 0 15vw;
 }
 .inputbox, .outputbox{
     border: none;
@@ -40,7 +40,7 @@ main{
     font-family: "Inter", sans-serif;
 }
 .parteBaja{
-    margin: 3em 0 0 3em;
+    margin: 2vw 0 0 2vw;
 }
 .parteBaja>p{
     font-size: x-large;
@@ -87,15 +87,19 @@ main{
 }
 .sinMensaje{
     position: absolute;
-    left: 14%;
+    left: 12%;
     top: 25%;
     pointer-events:none;
     text-align: center;
 }
+#botonc{
+    background: none;
+    border: none;
+}
 .botonCopiar{
     position: absolute;
     top: 90%;
-    left: -35%;
+    left: -25%;
     width: 10%;
     visibility: hidden;
     transition: 400ms;
@@ -116,7 +120,8 @@ main{
 }
 
 footer{
-    margin: 4% 0 1vh 0 ;
+
+    margin: 10vh 0 1vh 0 ;
     text-align: center;
     background: none;
 }
