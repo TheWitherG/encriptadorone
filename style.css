@@ -133,18 +133,112 @@ footer{
 
 
 @media screen and (max-width: 768px){
+    
+    .logo{
+        display: block;
+        text-align: center;
+        margin: 2vh auto;
+    }
+    .encabezado{
+        margin: 1vh auto;
+        font-size: 1.5vw;
+    }
     .contenedores{
         display: block;
+        margin: 0;
+        width: 100%;
+        text-align: center;
     }
     .entradaTexto{
         width: 100%;
         margin: 5vh auto;
         display: block;    
     }
-
-
-
-
+    .inputbox{
+        padding: 0.5em 0 0 1.3em;
+        width: 80%;
+        height: 35vw; 
+    }
+    .inputbox,.inputbox::placeholder{
+       
+        font-size: xx-large;
+    }
+    .parteBaja{
+        margin: 2vh 0 1vh 0;
+    }
+    .parteBaja > p{
+        font-size: large;
+    }
+    .botones{   
+        margin: 1.5vh 0 0 0;
+    }
+    .botoni, .botono{
+        width: 25vw;
+        height: 6vh;    
+        border-radius: 3vw;  
+        font-size: 1.5em;
+    }
+    .botoni:hover,.botono:hover{
+        width: 25vw;
+        height: 6vh;
+        font-size: 1.5em;/*
+        background-color: white;*/
+    }
+    .salidaTexto{
+        position: relative;
+        height: 40%;
+        width: 100%;
+    }
+    .outputbox{
+        width: 80%;
+        height: 25vh;
+        margin: 0 0 0 5vh;   
+        font-size: 2.3em;
+        pointer-events: none;
+        box-shadow: 1vh 2vh 3vh 0.5em #aab2d5;
+    }
+    .sinMensaje{
+        text-align: center;
+        top: 45%;
+        left: 53%;
+        transform: translate(-50%,-50%);
+    }
+    .muneco{        
+        width: 40%;
+    }
+    .textoMuneco>h2{
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .textoMuneco>p{
+        padding: 1.5vh 0 0 0;
+        font-size: 0.8em;
+    }
+    #botonc{
+        background: none;
+        border: none;
+    }
+    .botonCopiar{
+        position: absolute;
+        top: -32%;
+        left: 85%;
+        width: 6%;
+        visibility: hidden;
+        
+    }
+    .botonCopiar:hover{
+        width: 6.5%;
+    }
+    footer{
+        margin: 2vw 0 0 0 ;
+        text-align: center;
+        background: none;
+    }
+    .imagenesRedes img{
+        padding: 0 0 0 2vw;
+        width: 4%;
+    }
+    
 
 
 
@@ -155,6 +249,8 @@ footer{
 /*Configuración para pantalla de celular*/
 
 @media screen and (max-width: 425px) {
+
+    .
     
 }
 
