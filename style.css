@@ -132,7 +132,7 @@ footer{
 /*Configuración para pantalla de tableta */
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) and (min-width: 600px){
     
     .logo{
         display: block;
@@ -224,7 +224,7 @@ footer{
         left: 85%;
         width: 6%;
         visibility: hidden;
-        
+
     }
     .botonCopiar:hover{
         width: 6.5%;
@@ -248,9 +248,114 @@ footer{
 
 /*Configuración para pantalla de celular*/
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
+    .logo{
+        display: block;
+        text-align: center;
+        margin: 2vh auto;
+    }
+    .encabezado{
+        margin: 1vh auto;
+        font-size: 1.5vw;
+    }
+    .contenedores{
+        display: block;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .entradaTexto{
+        width: 100%;
+        margin: 10vh auto;
+        display: block;    
+        
+    }
+    .inputbox{
+        padding: 0.5em 0.5em 0 1.3em;
+        width: 80%;
+        height: 25vh; 
+    }
+    .inputbox,.inputbox::placeholder{
+       
+        font-size: x-large;
+    }
+    .parteBaja{
+        margin: 2vh 0 1vh 0;
+    }
+    .parteBaja > p{
+        font-size: large;
+    }
+    .botones{   
+        margin: 1.5vh 0 0 0;
+    }
+    .botoni, .botono{
+        width: 30vw;
+        height: 6vh;    
+        border-radius: 3vw;  
+        font-size: 1em;
+    }
+    .botoni:hover,.botono:hover{
+        width: 30vw;
+        height: 6vh;
+        font-size: 1.1em;/*
+        background-color: white;*/
+    }
+    .salidaTexto{
+        position: relative;
+        height: 30%;
+        width: 100%;
+    }
+    .outputbox{
+        width: 80%;
+        height: 15vh;
+        margin: 0 0 0 0;   
+        font-size: x-large;
+        pointer-events: none;
+        box-shadow: 1vh 2vh 3vh 0.5em #aab2d5;
+        padding: 0.5em 0.5em 0 1.3em;
+    }
+    .sinMensaje{
+        text-align: center;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .muneco{        
+        display: none;
+    }
+    .textoMuneco>h2{
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .textoMuneco>p{
+        padding: 1.5vh 0 0 0;
+        font-size: 0.8em;
+    }
+    #botonc{
+        background: none;
+        border: none;
+    }
+    .botonCopiar{
+        position: absolute;
+        top: -32%;
+        left: 50%;
+        width: 8%;
+        transform: translate(-50%,-50%);
+        visibility: hidden;
 
-    .
+    }
+    .botonCopiar:hover{
+        width: 6.5%;
+    }
+    footer{
+        margin: 8vh 0 0 0 ;
+        text-align: center;
+        background: none;
+    }
+    .imagenesRedes img{
+        padding: 0 0 0 2vw;
+        width: 8%;
+    }   
     
 }
 
