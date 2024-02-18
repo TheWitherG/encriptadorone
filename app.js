@@ -10,7 +10,6 @@ let botonCopia = document.querySelector('.botonCopiar');
 function capturaTexto(){   
     inputTexto = document.querySelector('.inputbox').value;
 }
-
 function mostrarTexto(){
     outputTexto=auxiliar;
     auxiliar=''; 
@@ -28,7 +27,6 @@ function copiar(){
     document.execCommand('copy');
     document.body.removeChild(aux);   
 }
-
 function encriptarTexto(){
     capturaTexto();    
     for (let index = 0; index < inputTexto.length; index++) {
@@ -58,7 +56,6 @@ function encriptarTexto(){
                 break;
         }        
     }
-    
     mostrarTexto();
 }
 
