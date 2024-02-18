@@ -77,7 +77,7 @@ main{
     width: 40%;
 }
 .outputbox{  
-    
+
     width: 60%;
     height: 68vh;
     margin: 0 0 0 5vh;   
@@ -128,3 +128,37 @@ footer{
     padding: 0 1vw 0 0vw;
     width: 3%;
 }
+
+/*Configuración para pantalla de tableta */
+
+
+@media screen and (max-width: 768px){
+    .contenedores{
+        display: block;
+    }
+    .entradaTexto{
+        width: 100%;
+        margin: 5vh auto;
+        display: block;    
+    }
+
+
+
+
+
+
+
+}
+
+
+
+/*Configuración para pantalla de celular*/
+
+@media screen and (max-width: 425px) {
+    
+}
+
+
+    
+
+
