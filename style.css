@@ -12,6 +12,9 @@ body{
     font-size: 2.6vh;
     color: #072B61;
 }
+.logo > p{
+    margin:0.5vw 0 0 1vw;
+}
 main{
     position:relative;
     margin:0 3vh;
@@ -139,6 +142,9 @@ footer{
         text-align: center;
         margin: 2vh auto;
     }
+    .logo > p{
+        display:none;
+    }
     .encabezado{
         margin: 1vh auto;
         font-size: 1.5vw;
@@ -239,12 +245,7 @@ footer{
         width: 4%;
     }
     
-
-
-
 }
-
-
 
 /*Configuración para pantalla de celular*/
 
@@ -253,6 +254,9 @@ footer{
         display: block;
         text-align: center;
         margin: 2vh auto;
+    }
+    .logo > p{
+        display:none;
     }
     .encabezado{
         margin: 1vh auto;
@@ -266,17 +270,16 @@ footer{
     }
     .entradaTexto{
         width: 100%;
-        margin: 10vh auto;
+        margin: 5vh auto;
         display: block;    
         
     }
     .inputbox{
         padding: 0.5em 0.5em 0 1.3em;
         width: 80%;
-        height: 25vh; 
+        height: 22vh; 
     }
     .inputbox,.inputbox::placeholder{
-       
         font-size: x-large;
     }
     .parteBaja{
@@ -287,27 +290,35 @@ footer{
     }
     .botones{   
         margin: 1.5vh 0 0 0;
+        text-align: center;
     }
     .botoni, .botono{
-        width: 30vw;
+        width: 80%;
         height: 6vh;    
         border-radius: 3vw;  
-        font-size: 1em;
+        font-size: 1.3em;
+    }
+    .botoni{
+        margin: 1vh auto;
+    }
+    .botono{
+        margin: 1vh auto;
     }
     .botoni:hover,.botono:hover{
-        width: 30vw;
+        width: 80%; 
         height: 6vh;
-        font-size: 1.1em;/*
+        font-size: 1.4em;/*
         background-color: white;*/
     }
     .salidaTexto{
         position: relative;
         height: 30%;
         width: 100%;
+        margin: ;
     }
     .outputbox{
         width: 80%;
-        height: 15vh;
+        height: 18vh;
         margin: 0 0 0 0;   
         font-size: x-large;
         pointer-events: none;
@@ -337,9 +348,9 @@ footer{
     }
     .botonCopiar{
         position: absolute;
-        top: -32%;
+        top: -14%;
         left: 50%;
-        width: 8%;
+        width: 9%;
         transform: translate(-50%,-50%);
         visibility: hidden;
 
