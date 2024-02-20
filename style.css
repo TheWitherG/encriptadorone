@@ -13,7 +13,8 @@ body{
     color: #072B61;
 }
 .logo > p{
-    margin:0.5vw 0 0 1vw;
+    margin:0.8vw 0 0 2vw;
+    font-size: medium;
 }
 main{
     position:relative;
@@ -314,7 +315,6 @@ footer{
         position: relative;
         height: 30%;
         width: 100%;
-        margin: ;
     }
     .outputbox{
         width: 80%;
